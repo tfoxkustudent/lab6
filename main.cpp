@@ -57,6 +57,18 @@ TEST_CASE("Adding elements from back"){
 	}
 }
 
+TEST_CASE("Functionality of addBack"){
+LinkedListOfInts list;
+	for (int i = 0; i <5; i++){
+		list.addBack(i);
+	}
+	std::vector<int> vector = list.toVector();
+	std::vector<int> vectorcompare = {0,1,2,3,4};
+	SECTION("test if add back actually adds to back"){
+		REQUIRE (vector == vectorcompare);
+	}
+}
+
 TEST_CASE("removing elements from front"){
 	LinkedListOfInts list;
 	list.addBack('a');

@@ -1,0 +1,8 @@
+Tim Fox
+EECS 448 Lab 6
+Bug List
+
+1.  The isEmpty() function always returns true.
+2.  The addBack() function actually behaves like addFront().
+3. The removeFront() does not remove anything, also it returns false.
+4.  The removeBack() does not remove anything, also it returns false.
